@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Architects+Daughter&family=Cherish&family=Oregano:ital@0;1&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Xanh Mono', monospace;
+    background-color: rgba(39, 30, 30, 1);
+    color: white;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.header {
+    background-color: rgba(17, 13, 13, 1);
+    width: 100%;
+    height: 30vh;
+    display: block;
+}
+.inner_header{
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.logo_container{
+    height: 70%;
+    width: 100%;
+    display: table;
+}
+.logo_container h1 {
+    color: red;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    font-size: 13vw;
+    font-weight: 400;
+}
+.logo_container h1 span {
+    font-weight: 900;
+}
+.navigation {
+    height: 10%;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.navigation a{
+    display: table;
+    float: left;
+    height: 100%;
+    width: 20%;
+    margin-left: 10%;
+}
+.navigation a:last-child{
+    padding-right: 0;
+}
+.navigation a li{
+    display: table-cell;
+    vertical-align: middle;
+    color: red;
+    font-size: 7vw;
+    height: 100%;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 800;
+    outline:none;
+    height: 40px;
+    text-align: center;
+    width: 40px;
+    border-radius:50px;
+    border: 2px solid #00000000;
+}
+.navigation a li:hover{
+    outline:none;
+    height: 40px;
+    text-align: center;
+    width: 40px;
+    border-radius:50px;
+    border: 2px solid red;
+    color:red;
+}
+.navigation a li:active{
+    outline:none;
+    height: 40px;
+    text-align: center;
+    width: 40px;
+    border-radius:50px;
+    border: 2px solid red;
+    background-color: red;
+    color:rgb(39, 30, 30);
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.footer {
+    background-color: rgb(17, 13, 13);
+    color: white;
+    padding: 15px;
+}
+.footer p {
+    color: #101010;
+    text-align: center;
+    font-weight: 700;
+}
+.footer span {
+    font-family: 'Cherish', cursive;
+    font-size: large;
+}
+
+[class*="col-"] { /* Portrait Mobile Phone */
+    float: left;
+    padding: 15px;
+    border: 1px solid red;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+}
+#col--wraper {
+    width: 100vw;
+}
+img {
+    margin: 15px;
+}
+
+@media only screen and (min-width: 640px) { /* Tablet Screen or bigger */
+    html, body {
+        height: 100%;
+        margin: 0px;
+    }
+    .header {
+        background-color: rgb(17, 13, 13);
+        width: 100%;
+        height: 150px;
+        display: block;
+    }
+    .inner_header{
+        width: 60vw;
+        height: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+    .logo_container{
+        width: 100%;
+        height: 100%;
+        display: table;
+        float: left;
+        width: auto;
+    }
+    .logo_container h1 {
+        color: red;
+        height: 100%;
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        font-family: 'Amatic SC', cursive;
+        font-size: 4vw;
+        font-weight: 400;
+    }
+    .logo_container h1 span {font-weight: 900;}
+    .navigation {
+        float: right;
+        height: 100%;
+        width: 12%;
+        padding: 0;
+        margin: 0 auto;}
+    .navigation a{
+        display: table;
+        padding: 0;
+        color: red;
+        height: 33%;
+        float: right;
+        margin: 0 10%;
+    }
+    .navigation a:last-child{
+        padding-right: 0;}
+    .navigation a li{
+        display: table-cell;
+        vertical-align: middle;
+        height: 100%;
+        font-family: 'Amatic SC', cursive;
+        font-weight: 800;
+        font-size: 200%;
+        height: 5%;
+        width: 5%;
+        border-radius: 50%;
+        color: red;
+    }
+    .navigation a li:hover{
+        height: 5%;
+        width: 5%;
+        border-radius: 50%;
+    }
+    .navigation a li:active{
+        height: 5%;
+        width: 5%;
+        border-radius: 50%;
+    }
+    .col-ppg {
+        width: 16.66%;
+    }
+    .col-content {width: 66.66%;}
+    
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
